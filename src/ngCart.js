@@ -139,7 +139,7 @@ angular.module('ngCart', ['ngCart.directives'])
 
         this.empty = function () {
             this.$cart.items = [];
-            localStorage.removeItem('cart');
+            sessionStorage.removeItem('cart');
         };
 
         this.toObject = function() {

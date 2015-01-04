@@ -35,6 +35,7 @@ angular.module('ngCart.directives', [])
     .directive('ngcartCart', ['ngCart', function(ngCart){
         return {
             restrict : 'E',
+            replace:true,
             controller : 'CartController',
             scope: {},
             templateUrl: 'template/ngCart/cart.html',
@@ -47,6 +48,7 @@ angular.module('ngCart.directives', [])
     .directive('ngcartSummary', ['ngCart', function(ngCart){
         return {
             restrict : 'E',
+            replace:true,
             controller : 'CartController',
             scope: {},
             transclude: true,
